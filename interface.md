@@ -71,16 +71,17 @@ __return:__ retorna a opção desejada
              break
      return resp
  ```
- ## Refência do Namespace interface.cores
-# Funções
-__def	cor(x)__
+# Refência do Namespace interface.cores
+
+## Funções
+
+### def	cor(x)
 
 Função que gera um codigo de cores no padrão escape sequence ANSI.
 
 :param x: numero de posição do codigo ANSI na tupla cores.
 
 :return: retorna o codigo da cor.
-
  
  ``` 
  def cor(x): 
