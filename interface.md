@@ -71,4 +71,40 @@ __return:__ retorna a opção desejada
              break
      return resp
  ```
+ ## Refência do Namespace interface.cores
+# Funções
+__def	cor(x)__
+
+Função que gera um codigo de cores no padrão escape sequence ANSI.
+
+:param x: numero de posição do codigo ANSI na tupla cores.
+
+:return: retorna o codigo da cor.
+
+ 
+ ``` 
+ def cor(x): 
+ 
+     cores = (
+     
+         '\033[m',        # 0 - sem cor
+         '\033[1;30m',    # 1 - branco
+         '\033[1;7;30m',  # 2 - branco_in
+         '\033[1;31m',    # 3 - vermelho
+         '\033[1;30;41m', # 4 - vermelho_in
+         '\033[1;32m',    # 5 - verde
+         '\033[1;7;32m',  # 6 - verde_in
+         '\033[1;33m',    # 7 - amarelo
+         '\033[1;7;33m',  # 8 - amarelo_in
+         '\033[1;34m',    # 9 - azul
+         '\033[1;35m',    # 10 - roxo
+         '\033[1;36m',    # 11 - azulc
+         '\033[1;7;36m',  # 12 - azul_in
+         '\033[1;37m'     # 13 - cinza
+         )
   
+     for n, v in enumerate(cores):
+         if x == n:
+             return v
+```
+   
