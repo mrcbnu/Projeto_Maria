@@ -79,9 +79,9 @@ __return:__ retorna a opção desejada
 
 Função que gera um codigo de cores no padrão escape sequence ANSI.
 
-:param x: numero de posição do codigo ANSI na tupla cores.
+__parametro x:__ numero de posição do codigo ANSI na tupla cores.
 
-:return: retorna o codigo da cor.
+__return:__ retorna o codigo da cor.
  
  ``` 
  def cor(x): 
