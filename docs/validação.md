@@ -1,12 +1,14 @@
 # Refência do Namespace validação.valida
-##Funções
-#####def leiaInt (msg)
+
+## Funções
+
+##### def leiaInt (msg)
  
-#####def leiaFloat (msg)
+##### def leiaFloat (msg)
  
-#####def leiaData (msg)
+##### def leiaData (msg)
  
-#####def leiaResp (msg)
+##### def leiaResp (msg)
 ***
 ### leiaInt(msg)
 
@@ -32,7 +34,7 @@ __return:__ retorna o valor correto
              return num
 ```  
   
-###leiaFloat()
+### leiaFloat()
 
 Função que valida a entrada de um numero real.
 
@@ -52,7 +54,7 @@ __return:__ retorna o valor correto
          else:
              return num
 ``` 
- ###leiaData(msg)
+ ### leiaData(msg)
 Função que recebe a data informada pelo usuario e retorna a correta.
 
 __parametro msg:__ mensagem informando o usuario a dar entrada no valor
@@ -73,7 +75,7 @@ __return:__ retorna a data correta
      return data
 ```   
 
-###leiaResp(msg)
+### leiaResp(msg)
 
 Função que valida a resposta 'S'(sim) ou 'N'(não) a uma determinada pergunta.
 

@@ -1,5 +1,12 @@
 # Refência do Namespace interface.layout
 ## Funções
+
+##### def 	linha (s, x=70, cr=0)
+ 
+##### def 	cabecalho (x, msg)
+ 
+##### def 	menu (lst, cab)
+***
 ### def	cabecalho(s, x=70, cr=0)
 
 Gera um cabeçalho de titulo de tela, utiliza a função linha() e a função cor(),
