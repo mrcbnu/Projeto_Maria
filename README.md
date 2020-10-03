@@ -1,4 +1,4 @@
-![MARIA V1.0](https://github.com/mrcbnu/Projeto_Maria/blob/master/html/LOGO%20MARIA.png)
+![MARIA V1.0](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/LOGO%20MARIA.png)
 
 # Apresentação
 
