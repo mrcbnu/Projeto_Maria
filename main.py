@@ -1,5 +1,6 @@
 from interface.cores import *
 from interface.layout import *
+from interface.vinheta import *
 from lib.relatorios import *
 from validação.valida import *
 from lib.cadastros import *
@@ -8,15 +9,15 @@ import os
 
 
 def main():
-
     os.system('cls')
+    abertura()
     arq = 'jogos.txt'
 
     print('')
 
     while True:
         os.system('cls')
-        cabecalho('-', 'CAMPEONATO DE BASKETE')
+        cabecalho('-', 'MARIA v1.0')
         opção = menu(['INCLUSÃO', 'CONSULTA', 'SAIR'], 'MENU PRINCIPAL')
         if opção == 1:
             cabecalho('-','INCLUSÃO')
@@ -36,7 +37,7 @@ def main():
         elif opção == 2:
             while True:
                 os.system('cls')
-                cabecalho('-', 'CAMPEONATO DE BASKETE')
+                cabecalho('-', 'MARIA v1.0')
                 op_1 = menu(['TABELA GERAL', 'TABELA PARCIAL', 'RESUMO', 'VOLTAR'], 'CONSULTA')
                 if op_1 == 1:
                     while True:
