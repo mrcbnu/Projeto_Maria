@@ -36,19 +36,19 @@ Esta é a lista com os pacotes e suas respectivas descrições:
 
  * __interface__	
  
-    *[ cores	](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/interface.md#ref%C3%AAncia-do-namespace-interfacecores)
+     [cores](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/interface.md#ref%C3%AAncia-do-namespace-interfacecores)
     
-    *[ layout__](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/interface.md#ref%C3%AAncia-do-namespace-interfacelayout)
+     [layout](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/interface.md#ref%C3%AAncia-do-namespace-interfacelayout)
     
  * __lib__	
  
-    *[ arquivo	](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/lib.md#ref%C3%AAncia-do-namespace-libarquivo)
+     [arquivo](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/lib.md#ref%C3%AAncia-do-namespace-libarquivo)
     
-    *[ cadastros	](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/lib.md#ref%C3%AAncia-do-namespace-libcadastros)
+     [cadastro](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/lib.md#ref%C3%AAncia-do-namespace-libcadastros)
     
-    *[ relatorios	](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/lib.md#refer%C3%AAncia-do-namespace-librelatorios)
+     [relatorios](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/lib.md#refer%C3%AAncia-do-namespace-librelatorios)
     
   * __validação__	
   
-    *[ valida	](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/valida%C3%A7%C3%A3o.md#ref%C3%AAncia-do-namespace-valida%C3%A7%C3%A3ovalida)
+     [valida](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/valida%C3%A7%C3%A3o.md#ref%C3%AAncia-do-namespace-valida%C3%A7%C3%A3ovalida)
 
