@@ -27,7 +27,7 @@ O programa funciona em modo terminal e tem 2 menus de opções.
 * A opção [3] RESUMO, gera um relatório contendo um resumo do desempenho de Maria, total de partidas, total de pontos, média de pontos por partida, maior pontução e em qual partida e menor pontução e em qual partida.
 
 * A opção [4] VOLTAR, volta para o menu principal.
-
+***
 # Documentação
 
 ## Pacotes
@@ -52,3 +52,7 @@ Esta é a lista com os pacotes e suas respectivas descrições:
   
      [valida](https://github.com/mrcbnu/Projeto_Maria/blob/master/docs/valida%C3%A7%C3%A3o.md#ref%C3%AAncia-do-namespace-valida%C3%A7%C3%A3ovalida)
 
+***
+
+# Execução
+##### Para rodar a aplicação em seu computador, baixe o [Maria.rar](Maria.rar) e descompacte-o, o executável estará na pasta ```Maria/dist/Maria.exe```
