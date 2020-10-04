@@ -55,4 +55,5 @@ Esta é a lista com os pacotes e suas respectivas descrições:
 ***
 
 # Execução
-##### Para rodar a aplicação em seu computador, baixe o [Maria.rar](Maria.rar) e descompacte-o, o executável estará na pasta ```Maria/dist/Maria.exe```
+##### Para rodar a aplicação em seu computador, baixe o [Maria.rar](Maria.rar) descompacte-o, 
+o executável estará na pasta ```Maria/dist/Maria.exe```
