@@ -1,3 +1,5 @@
+from time import sleep
+
 
 def abertura():
     print('''
@@ -18,3 +20,21 @@ def abertura():
     input('''
                     Pressione qualquer tecla para continuar
                     ''')
+
+def encerra():
+    print('''
+            ┌────────────────────────────────────────────────────────┐
+            │                      MARIA v1.0                        │
+            │                                                        │
+            │                                                        │
+            │                                                        │
+            │                                                        │ 
+            │                E N C E R R A N D O . . .               │ 
+            │                                                        │
+            │                                                        │
+            │                                                        │
+            │                                                        │
+            │                                                        │
+            └────────────────────────────────────────────────────────┘
+                                                                            ''')
+

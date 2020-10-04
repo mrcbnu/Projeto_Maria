@@ -97,9 +97,8 @@ def main():
                 else:
                     print('opção errada')
         elif opção == 3:
-            print('\nEncerrando... \n')
-            sleep(2)
-            print('ATÉ LOGO!')
+            os.system('cls')
+            encerra()
             break
         else:
             print('opção errada')
