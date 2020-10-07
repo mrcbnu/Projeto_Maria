@@ -81,42 +81,28 @@ __param pontos:__ valor retornado da função inclusao()
 ```
  def registraDados(arq, pontos):
      
-     existe = arqExiste(arq)
-     if not existe:
-         criarArquivo(arq)
-         arq_jogo = open(arq, 'at')
-         jogo = 1
-         min = max = pontos
-         r_min = r_max = 0
-         try:
-             arq_jogo.write(f'{jogo};{pontos};{min};{max};{r_min};{r_max}\n')
-             arq_jogo.close()
-         except:
-             print(f'{cor(3)}Problemas em gravar os dados!{cor(0)}')
-     else:
          with open(arq, 'r') as novo:
-             for reg in novo:
-                 ult_reg = reg.split(';')
-  
-         jogo = (int(ult_reg[0]) + 1)
-         min = int(ult_reg[2])
-         max = int(ult_reg[3])
-         r_min = int(ult_reg[4])
-         r_max = int(ult_reg[5])
-  
-         if pontos < min:
-             min = pontos
-             r_min += 1
-         if pontos > max:
-             max = pontos
-             r_max += 1
-         arq_jogo = open(arq, 'at')
-         try:
-             arq_jogo.write(f'{jogo};{pontos};{min};{max};{r_min};{r_max}\n')
-             print(f'{cor(9)}Registrado!{cor(0)}')
-             arq_jogo.close()
-         except:
-             print(f'{cor (3)}Problemas em gravar os dados!{cor (0)}')
+        for reg in novo:
+            ult_reg = reg.split(';')
+    jogo = (int(ult_reg[0]) + 1)
+    min = int(ult_reg[2])
+    max = int(ult_reg[3])
+    r_min = int(ult_reg[4])
+    r_max = int(ult_reg[5])
+
+    if pontos < min:
+        min = pontos
+        r_min += 1
+    if pontos > max:
+        max = pontos
+        r_max += 1
+    arq_jogo = open(arq, 'at')
+    try:
+        arq_jogo.write(f'{jogo};{pontos};{min};{max};{r_min};{r_max}\n')
+        print(f'{cor(9)}Registrado!{cor(0)}')
+        arq_jogo.close()
+    except:
+        print(f'{cor (3)}Problemas em gravar os dados!{cor (0)}')
 ```  
   
 ### contaJogos()
@@ -268,10 +254,10 @@ __param arq:__ arquivo oonde está armazendado os dados da temporada.
              qdadePontos += pontos
              if v == 0:
                  min = max = pontos
-             if pontos < min:
+             if pontos <= min:
                  min = pontos
                  jogoRecMim = campo[0]
-             if pontos > max:
+             if pontos >= max:
                  max = pontos
                  jogoRecMax = campo[0]
   

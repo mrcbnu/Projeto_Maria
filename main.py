@@ -22,17 +22,35 @@ def main():
         if opção == 1:
             cabecalho('-','INCLUSÃO')
             while True:
-                with open(arq, 'r') as novo:
-                    for reg in novo:
-                        ult_reg = reg.split(';')
-                        proximo = int(ult_reg[0]) + 1
-                pontos = inclusao(f'Pontos marcados no {proximo}º jogo: ')
-                registraDados(arq, pontos)
-                continua = leiaResp('Deseja incluir outro jogo [S/N]: ')
-
-                if not continua:
-                    break
-                linha('-')
+                existe = arqExiste(arq)
+                if not existe:
+                    criarArquivo(arq)
+                    pontos = inclusao(f'Pontos marcados no 1º jogo: ')
+                    arq_jogo = open(arq, 'at')
+                    jogo = 1
+                    min = max = pontos
+                    r_min = r_max = 0
+                    try:
+                        arq_jogo.write(f'{jogo};{pontos};{min};{max};{r_min};{r_max}\n')
+                        print (f'{cor (9)}Registrado!{cor (0)}')
+                        arq_jogo.close()
+                    except:
+                        print(f'{cor (3)}Problemas em gravar os dados!{cor (0)}')
+                    continua = leiaResp ('Deseja incluir outro jogo [S/N]: ')
+                    if not continua:
+                        break
+                        linha('-')
+                else:
+                    with open(arq, 'r') as novo:
+                        for reg in novo:
+                            ult_reg = reg.split(';')
+                            proximo = int(ult_reg[0]) + 1
+                        pontos = inclusao(f'Pontos marcados no {proximo}º jogo: ')
+                        registraDados(arq, pontos)
+                        continua = leiaResp('Deseja incluir outro jogo [S/N]: ')
+                    if not continua:
+                        break
+                        linha('-')
 
         elif opção == 2:
             while True:

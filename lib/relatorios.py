@@ -106,10 +106,10 @@ def resumoGeral(arq):
             qdadePontos += pontos
             if v == 0:
                 min = max = pontos
-            if pontos < min:
+            if pontos <= min:
                 min = pontos
                 jogoRecMim = campo[0]
-            if pontos > max:
+            if pontos >= max:
                 max = pontos
                 jogoRecMax = campo[0]
 
